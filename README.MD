@@ -37,12 +37,17 @@ This repository contains a custom, production-ready React application boilerplat
 * Added custom SVG icon (`icon.svg`) inside the `public/` directory.
 * Updated `index.html` to include the new icon.
 
+### 6. ESLint Integration & Code Linting
+* Installed `eslint`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh`, and `globals` as devDependencies.
+* Configured modern ESLint Flat Config in `eslint.config.js`.
+* Integrated recommended linting rules for React, React Hooks, and React Refresh.
 ---
 
 ## 🛠️ Tech Stack
 
 * **Library:** React 18+
 * **Build Tool:** Vite
+* **Code Quality:** ESLint
 * **Styling:** Tailwind CSS & Custom CSS
 * **Module System:** ES Modules (ESM)
 
@@ -60,6 +65,7 @@ react-vite-manual-setup/
 │   ├── index.css         # Global styles with Tailwind directives
 │   └── main.jsx          # Application entry point
 ├── .gitignore            # Git ignore rules
+├── eslint.config.js      # ESLint configuration file
 ├── index.html            # HTML entry document
 ├── package.json          # Node dependencies and scripts
 ├── README.md             # Project documentation
