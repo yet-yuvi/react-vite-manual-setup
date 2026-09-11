@@ -1,6 +1,6 @@
 # React + Vite Counter App Boilerplate
 
-This repository contains a custom, production-ready React application boilerplate built manually from scratch using Vite, ECMAScript Modules (ESM), and Tailwind CSS.
+This repository contains a custom, production-ready React application boilerplate built manually from scratch using Vite, ECMAScript Modules (ESM), Tailwind CSS, ESLint, and Prettier.
 
 ---
 
@@ -41,6 +41,13 @@ This repository contains a custom, production-ready React application boilerplat
 * Installed `eslint`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh`, and `globals` as devDependencies.
 * Configured modern ESLint Flat Config in `eslint.config.js`.
 * Integrated recommended linting rules for React, React Hooks, and React Refresh.
+
+### 7. Prettier & Workspace Setup
+* Installed `prettier` and `eslint-config-prettier` and `eslint-plugin-prettier` as devDependencies to enforce code formatting standards and integrate seamlessly with ESLint.
+* Created `.prettierrc` for project-wide formatting standards.
+* Created `.prettierignore` to skip build artifacts and dependency folders.
+* Configured workspace-level `.vscode/settings.json` for format-on-save integration.
+
 ---
 
 ## 🛠️ Tech Stack
@@ -48,6 +55,7 @@ This repository contains a custom, production-ready React application boilerplat
 * **Library:** React 18+
 * **Build Tool:** Vite
 * **Code Quality:** ESLint
+* **Code Formatter:** Prettier
 * **Styling:** Tailwind CSS & Custom CSS
 * **Module System:** ES Modules (ESM)
 
@@ -57,19 +65,23 @@ This repository contains a custom, production-ready React application boilerplat
 
 ```text
 react-vite-manual-setup/
-├── public/               # Static assets
-│   └── icon.svg          # Application favicon/icon
+├── .vscode/               # VS Code workspace configurations
+│   └── settings.json      # Format-on-save & default formatter settings
+├── public/                # Static assets
+│   └── icon.svg           # Application favicon/icon
 ├── src/
-│   ├── App.css           # Component styles
-│   ├── App.jsx           # Root application component
-│   ├── index.css         # Global styles with Tailwind directives
-│   └── main.jsx          # Application entry point
-├── .gitignore            # Git ignore rules
-├── eslint.config.js      # ESLint configuration file
-├── index.html            # HTML entry document
-├── package.json          # Node dependencies and scripts
-├── README.md             # Project documentation
-└── vite.config.js        # Vite & Tailwind configuration
+│   ├── App.css            # Component styles
+│   ├── App.jsx            # Root application component
+│   ├── index.css          # Global styles with Tailwind directives
+│   └── main.jsx           # Application entry point
+├── .gitignore             # Git ignore rules
+├── .prettierignore         # Prettier ignore patterns
+├── .prettierrc             # Prettier configuration rules
+├── eslint.config.js       # ESLint configuration file
+├── index.html             # HTML entry document
+├── package.json           # Node dependencies and scripts
+├── README.md              # Project documentation
+└── vite.config.js         # Vite & Tailwind configuration
 ```
 
 ---
@@ -102,3 +114,5 @@ Ensure you have **Node.js** (v18 or higher) and **npm** installed on your system
 * `npm run dev` — Runs the app in development mode at `http://localhost:5175`.
 * `npm run build` — Builds the app for production to the `dist` folder.
 * `npm run preview` — Previews the production build locally.
+* `npm run lint` — Runs ESLint to analyze code quality and detect errors.
+* `npm run format` — Runs Prettier to auto-format all supported files inside src/.
