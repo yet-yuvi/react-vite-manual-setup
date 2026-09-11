@@ -33,6 +33,10 @@ This repository contains a custom, production-ready React application boilerplat
 * Imported Tailwind CSS directives in `src/index.css`.
 * Applied Tailwind utility classes in `src/App.jsx`.
 
+### 5. Custom Branding & Assets
+* Added custom SVG icon (`icon.svg`) inside the `public/` directory.
+* Updated `index.html` to include the new icon.
+
 ---
 
 ## 🛠️ Tech Stack
@@ -49,6 +53,7 @@ This repository contains a custom, production-ready React application boilerplat
 ```text
 react-vite-manual-setup/
 ├── public/               # Static assets
+│   └── icon.svg          # Application favicon/icon
 ├── src/
 │   ├── App.css           # Component styles
 │   ├── App.jsx           # Root application component
