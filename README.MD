@@ -1,4 +1,4 @@
-# React + Vite Counter App Boilerplate
+# React + Vite + Tailwind Template Boilerplate
 
 This repository contains a custom, production-ready React application boilerplate built manually from scratch using Vite, ECMAScript Modules (ESM), Tailwind CSS, ESLint, and Prettier.
 
@@ -20,7 +20,7 @@ This repository contains a custom, production-ready React application boilerplat
 * Created `index.html` with `#root` container and module script link.
 * Created `vite.config.js` with `@vitejs/plugin-react`.
 * Set up `src/main.jsx` to render `App.jsx` within `React.StrictMode`.
-* Created initial `App.jsx` Counter component UI.
+* Created initial `App.jsx` starter component UI.
 
 ### 3. Server Configuration & Styling Setup
 * Configured custom development server port (`5175`) in `vite.config.js`.
@@ -29,13 +29,13 @@ This repository contains a custom, production-ready React application boilerplat
 
 ### 4. Tailwind CSS Integration
 * Installed `tailwindcss` as a `devDependency`.
-* Integrated Tailwind plugin in `vite.config.js`.
+* Integrated `@tailwindcss/vite` plugin in `vite.config.js`.
 * Imported Tailwind CSS directives in `src/index.css`.
 * Applied Tailwind utility classes in `src/App.jsx`.
 
 ### 5. Custom Branding & Assets
 * Added custom SVG icon (`icon.svg`) inside the `public/` directory.
-* Updated `index.html` to include the new icon.
+* Updated `index.html` to include the new icon and title.
 
 ### 6. ESLint Integration & Code Linting
 * Installed `eslint`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh`, and `globals` as devDependencies.
@@ -43,7 +43,7 @@ This repository contains a custom, production-ready React application boilerplat
 * Integrated recommended linting rules for React, React Hooks, and React Refresh.
 
 ### 7. Prettier & Workspace Setup
-* Installed `prettier` and `eslint-config-prettier` and `eslint-plugin-prettier` as devDependencies to enforce code formatting standards and integrate seamlessly with ESLint.
+* Installed `prettier`, `eslint-config-prettier`, and `eslint-plugin-prettier` as devDependencies to enforce code formatting standards and integrate seamlessly with ESLint.
 * Created `.prettierrc` for project-wide formatting standards.
 * Created `.prettierignore` to skip build artifacts and dependency folders.
 * Configured workspace-level `.vscode/settings.json` for format-on-save integration.
@@ -52,11 +52,11 @@ This repository contains a custom, production-ready React application boilerplat
 
 ## 🛠️ Tech Stack
 
-* **Library:** React 18+
+* **Library:** React 19+
 * **Build Tool:** Vite
 * **Code Quality:** ESLint
 * **Code Formatter:** Prettier
-* **Styling:** Tailwind CSS & Custom CSS
+* **Styling:** Tailwind CSS v4 & Custom CSS
 * **Module System:** ES Modules (ESM)
 
 ---
@@ -64,7 +64,7 @@ This repository contains a custom, production-ready React application boilerplat
 ## 📁 Project Structure
 
 ```text
-react-vite-manual-setup/
+react-vite-tailwind-template/
 ├── .vscode/               # VS Code workspace configurations
 │   └── settings.json      # Format-on-save & default formatter settings
 ├── public/                # Static assets
@@ -75,8 +75,8 @@ react-vite-manual-setup/
 │   ├── index.css          # Global styles with Tailwind directives
 │   └── main.jsx           # Application entry point
 ├── .gitignore             # Git ignore rules
-├── .prettierignore         # Prettier ignore patterns
-├── .prettierrc             # Prettier configuration rules
+├── .prettierignore        # Prettier ignore patterns
+├── .prettierrc            # Prettier configuration rules
 ├── eslint.config.js       # ESLint configuration file
 ├── index.html             # HTML entry document
 ├── package.json           # Node dependencies and scripts
